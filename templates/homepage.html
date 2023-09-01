@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First proj</title>
+</head>
+<body>
+<h1> Catch user Zero</h1>
+    <p> You can complete here the data from a session of navigating the internet from a user!</p>
+    <form method="GET" action ="predict">
+        <label for="os">What operating system is used in that session:</label>
+        <select id="os" name="os">
+            <option value="Windows 10">Windows 10</option>
+            <option value="Ubuntu">Ubuntu</option>
+            <option value="MacOS">MacOS</option>
+            <option value="Windows 8">Windows 8</option>
+            <option value="Windows 7">Windows </option>
+            <option value="Debian">Debian</option>
+        </select><br><br>
+        <label for="browser">What broswer is used in that session:</label>
+        <select id="browser" name="browser">       
+            <option value="Chrome">Chrome</option>
+            <option value="Firefox">Firefox</option>
+            <option value="Safari">Safari</option>
+            <option value="Internet Explorer">Internet Explorer</option>
+        </select><br><br>
+        <label for="locale">What keyboard setting is used in that session:</label>
+        <select id="locale" name="locale"> 
+            <option value="uk-UA">uk-UA</option>
+            <option value="ur-PK">ur-PK</option>
+            <option value="pt-BR">pt-BR</option>
+            <option value="en-SG">en-SG</option>
+            <option value="en-AU">en-AU</option>
+            <option value="ru_RU">ru_RU</option>
+            <option value="en-GB">en-GB</option>
+            <option value="fr-FR">fr-FR</option>
+            <option value="ro-RO">ro-RO</option>
+            <option value="es-MX">es-MX</option>
+            <option value="it-IT">it-IT</option>
+            <option value="xh-ZA">xh-ZA</option>
+            <option value="pt-PT">pt-PT</option>
+            <option value="en-CA">en-CA</option>
+            <option value="vi-VN">vi-VN</option>
+            <option value="en-US">en-US</option>
+            <option value="ru-RU">ru-RU</option>
+            <option value="pl-PL">pl-PL</option>
+            <option value="zh-CN">zh-CN</option>
+            <option value="wo-SN">wo-SN</option>
+            <option value="en-NZ">en-NZ</option>
+            <option value="nl-NL">nl-NL</option>
+            <option value="ja-JP">ja-JP</option>
+            <option value="bg-BG">bg-BG</option>
+            <option value="de-DE">de-DE</option>
+        </select><br><br>
+        <label for="location">Location of the user during the session:</label>
+        <select id="location" name="location"> 
+            <option value="New Zealand/Auckland">New Zealand/Auckland</option>
+            <option value="France/Paris">France/Paris</option>
+            <option value="Germany/Berlin">Germany/Berlin</option>
+            <option value="Singapore/Singapore">Singapore/Singapore</option>
+            <option value="Australia/Sydney">Australia/Sydney</option>
+            <option value="Japan/Tokyo">Japan/Tokyo</option>
+            <option value="Canada/Vancouver">Canada/Vancouver</option>
+            <option value="Canada/Toronto">Canada/Toronto</option>
+            <option value="USA/Chicago">USA/Chicago</option>
+            <option value="UK/London">UK/London</option>
+            <option value="USA/San Francisco">USA/San Francisco</option>
+            <option value="Malaysia/Kuala Lumpur">Malaysia/Kuala Lumpur</option>
+            <option value="Spain/Madrid">Spain/Madrid</option>
+            <option value="Italy/Rome">Italy/Rome</option>
+            <option value="Russia/Moscow">Russia/Moscow</option>
+            <option value="USA/Miami">USA/Miami</option>
+            <option value="India/Delhi">India/Delhi</option>
+            <option value="China/Shanghai">China/Shanghai</option>
+            <option value="Netherlands/Amsterdam">Netherlands/Amsterdam</option>
+            <option value="USA/New York">USA/New York</option>
+            <option value="Brazil/Rio de Janeiro">Brazil/Rio de Janeiro</option>
+        </select><br><br>
+        <p>See if any of those sites were visited during the session and mark them:</p>
+        <input type="checkbox" id="lenta.ru" name="lenta.ru" value="lenta.ru">
+        <label for="lenta.ru"> lenta.ru</label><br>
+        <input type="checkbox" id="toptal.com" name="toptal.com" value="toptal.com">
+        <label for="toptal.com"> toptal.com</label><br>
+        <input type="checkbox" id="vk.com" name="vk.com" value="vk.com">
+        <label for="vk.com"> vk.com</label><br>
+        <input type="checkbox" id="slack.com" name="slack.com" value="slack.com">
+        <label for="slack.com"> slack.com</label><br>
+        <input type="checkbox" id="mail.google.com" name="mail.google.com" value="mail.google.com">
+        <label for="mail.google.com"> mail.google.com</label><br>
+        <input type="checkbox" id="youtube.com" name="youtube.com" value="youtube.com">
+        <label for="youtube.com"> youtube.com</label><br><br>
+        <p>The gender of the user:</p>
+        <input type="radio" id="m" name="gender" value="m">
+        <label for="m">male</label><br>
+        <input type="radio" id="f" name="gender" value="f">
+        <label for="f">female</label><br><br>
+        <label for="n_sites">Number of sites visited during the session by the user: </label><br>
+        <input type="text" id="n_sites" name="n_sites" value="0"><br><br>
+        <label for="time_spent">Total time spent during that session (sum length): </label><br>
+        <input type="text" id="time_spent" name="time_spent" value="0"><br><br>
+        <p>On what date was the session taking place?</p>
+        <label for="year">Year:</label><br>
+        <input type="text" id="year" name="year" value="2016"><br><br>
+        <label for="month">Month:</label><br>
+        <input type="text" id="month" name="month" value="06"><br><br>
+        <label for="day">Day:</label><br>
+        <input type="text" id="day" name="day" value="21"><br><br>
+        <p>At what time was the session taking place?</p>
+        <label for="time">hh:mm:ss</label><br>
+        <input type="text" id="time" name="time" value="19:44:00"><br><br>
+        <input type="submit">
+  </form>
+</body>
+</html>
